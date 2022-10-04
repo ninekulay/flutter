@@ -37,3 +37,25 @@ class User {
     return User(username: jsonData['username'], password: jsonData['password']);
   }
 }
+
+class VersionControl {
+  String? version;
+
+  VersionControl({this.version});
+
+  factory VersionControl.fromJson(Map<String, dynamic> jsonData) {
+    return VersionControl(version: jsonData['version']);
+  }
+}
+
+class LinkReceive {
+  String? username;
+  String? password;
+
+  LinkReceive({this.username, this.password});
+
+  factory LinkReceive.fromJson(Map<String, dynamic> jsonData) {
+    return LinkReceive(
+        username: jsonData['username'], password: jsonData['password']);
+  }
+}
